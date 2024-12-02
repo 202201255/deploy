@@ -1,0 +1,364 @@
+/* General container and layout styling */
+.course-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header-section {
+  margin-bottom: 2rem;
+}
+
+.course-registration-title {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Student Information Section */
+.student-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  background: #f5f7ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Courses Grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Course Card */
+.course-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-card.selected {
+  border: 2px solid #4caf50;
+}
+
+.course-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+}
+
+.course-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.selected-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #4caf50;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.course-card h2 {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+}
+
+.course-card .course-details {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.course-card .course-details span {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Course Selection Form */
+.course-selection-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#form-group label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+#form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f8f9fa;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+#form-group select:focus {
+  outline: none;
+  border-color: #1a237e;
+}
+
+#form-group select option:disabled {
+  color: #999;
+  background: #f0f0f0;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.btn-submit,
+.btn-reset {
+  flex-basis: 20%;
+  min-width: 120px;
+  max-width: 200px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit {
+  background: #1a237e;
+  color: white;
+}
+
+.btn-submit:hover {
+  background: #283593;
+}
+
+.btn-reset {
+  background: #1a237e;
+  color: white;
+}
+
+.btn-reset:hover {
+  background: #283593;
+}
+
+/* Course Modal */
+.course-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.course-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.course-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.course-modal h2 {
+  margin-bottom: 1rem;
+  color: #1a237e;
+}
+
+.course-info {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Responsive Media Queries */
+
+/* Small screens (up to 600px) */
+@media (max-width: 600px) {
+  .course-container {
+    padding: 1rem;
+  }
+
+  .course-registration-title {
+    font-size: 2rem;
+  }
+
+  .student-info {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card h2 {
+    font-size: 1rem;
+  }
+
+  .course-selection-form {
+    padding: 1rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-submit,
+  .btn-reset {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .course-modal {
+    width: 70%;
+    padding: 1.5rem;
+  }
+
+  .course-modal h2 {
+    font-size: 1.5rem;
+  }
+
+  .course-info {
+    flex-wrap: wrap;
+  }
+}
+
+/* Medium screens (600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .course-container {
+    max-width: 90%;
+  }
+
+  .course-registration-title {
+    font-size: 2.2rem;
+  }
+
+  .student-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .course-card h2 {
+    font-size: 1.05rem;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .course-modal {
+    width: 80%;
+    padding: 1.5rem;
+  }
+}
+
+/* Large screens (900px and up) */
+@media (min-width: 901px) {
+  .course-container {
+    max-width: 1200px;
+  }
+
+  .course-registration-title {
+    font-size: 2.5rem;
+  }
+
+  .student-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

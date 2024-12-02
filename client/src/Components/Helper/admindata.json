@@ -1,0 +1,257 @@
+{
+    "status": "success",
+    "allocations": {
+        "Student_1": [
+            "Course_1",
+            "Course_2"
+        ],
+        "Student_2": [
+            "Course_3",
+            "Course_4"
+        ],
+        "Student_3": [
+            "Course_2",
+            "Course_5"
+        ],
+        "Student_4": [
+            "Course_1",
+            "Course_2"
+        ],
+        "Student_5": [
+            "Course_3",
+            "Course_4"
+        ],
+        "Student_6": [
+            "Course_5",
+            "Course_6"
+        ],
+        "Student_7": [
+            "Course_1",
+            "Course_8"
+        ],
+        "Student_8": [
+            "Course_3",
+            "Course_4"
+        ],
+        "Student_9": [
+            "Course_1",
+            "Course_2"
+        ],
+        "Student_10": [
+            "Course_4",
+            "Course_6"
+        ],
+        "Student_11": [
+            "Course_2",
+            "Course_3"
+        ],
+        "Student_12": [
+            "Course_3",
+            "Course_5"
+        ],
+        "Student_13": [
+            "Course_2",
+            "Course_3"
+        ],
+        "Student_14": [
+            "Course_1",
+            "Course_5"
+        ],
+        "Student_15": [
+            "Course_3",
+            "Course_4"
+        ],
+        "Student_16": [
+            "Course_1",
+            "Course_2"
+        ],
+        "Student_17": [
+            "Course_3",
+            "Course_4"
+        ],
+        "Student_18": [
+            "Course_2",
+            "Course_5"
+        ],
+        "Student_19": [
+            "Course_1",
+            "Course_2"
+        ],
+        "Student_20": [
+            "Course_2",
+            "Course_5"
+        ],
+        "Student_21": [
+            "Course_3",
+            "Course_4"
+        ],
+        "Student_22": [
+            "Course_1",
+            "Course_5"
+        ],
+        "Student_23": [
+            "Course_3",
+            "Course_4"
+        ],
+        "Student_24": [
+            "Course_1",
+            "Course_2"
+        ],
+        "Student_25": [
+            "Course_5",
+            "Course_6"
+        ],
+        "Student_26": [
+            "Course_3",
+            "Course_4"
+        ],
+        "Student_27": [
+            "Course_1",
+            "Course_5"
+        ],
+        "Student_28": [
+            "Course_3",
+            "Course_4"
+        ],
+        "Student_29": [
+            "Course_1",
+            "Course_5"
+        ],
+        "Student_30": [
+            "Course_2",
+            "Course_6"
+        ],
+        "Student_31": [
+            "Course_3",
+            "Course_5"
+        ],
+        "Student_32": [
+            "Course_2",
+            "Course_4"
+        ],
+        "Student_33": [
+            "Course_1",
+            "Course_2"
+        ],
+        "Student_34": [
+            "Course_3",
+            "Course_5"
+        ],
+        "Student_35": [
+            "Course_1",
+            "Course_4"
+        ],
+        "Student_36": [
+            "Course_3",
+            "Course_5"
+        ],
+        "Student_37": [
+            "Course_1",
+            "Course_6"
+        ],
+        "Student_38": [
+            "Course_4",
+            "Course_5"
+        ],
+        "Student_39": [
+            "Course_2",
+            "Course_4"
+        ],
+        "Student_40": [
+            "Course_1",
+            "Course_5"
+        ],
+        "Student_41": [
+            "Course_1",
+            "Course_6"
+        ],
+        "Student_42": [
+            "Course_2",
+            "Course_4"
+        ],
+        "Student_43": [
+            "Course_1",
+            "Course_2"
+        ],
+        "Student_44": [
+            "Course_3",
+            "Course_5"
+        ],
+        "Student_45": [
+            "Course_1",
+            "Course_4"
+        ],
+        "Student_46": [
+            "Course_3",
+            "Course_5"
+        ],
+        "Student_47": [
+            "Course_4",
+            "Course_6"
+        ],
+        "Student_48": [
+            "Course_3",
+            "Course_5"
+        ],
+        "Student_49": [
+            "Course_2",
+            "Course_4"
+        ],
+        "Student_50": [
+            "Course_6",
+            "Course_9"
+        ]
+    },
+    "scores": {
+        "Student_1": 4.5,
+        "Student_2": 3.5,
+        "Student_3": 4,
+        "Student_4": 4.5,
+        "Student_5": 3.5,
+        "Student_6": 3.5,
+        "Student_7": 3.5,
+        "Student_8": 4.5,
+        "Student_9": 4.5,
+        "Student_10": 3.5,
+        "Student_11": 4.5,
+        "Student_12": 3.5,
+        "Student_13": 4.5,
+        "Student_14": 4,
+        "Student_15": 4.5,
+        "Student_16": 4.5,
+        "Student_17": 3.5,
+        "Student_18": 4.5,
+        "Student_19": 4.5,
+        "Student_20": 4,
+        "Student_21": 3.5,
+        "Student_22": 4,
+        "Student_23": 4.5,
+        "Student_24": 4.5,
+        "Student_25": 3.5,
+        "Student_26": 3.5,
+        "Student_27": 3.5,
+        "Student_28": 4.5,
+        "Student_29": 4,
+        "Student_30": 4,
+        "Student_31": 3.5,
+        "Student_32": 4.5,
+        "Student_33": 4.5,
+        "Student_34": 4.5,
+        "Student_35": 4,
+        "Student_36": 4.5,
+        "Student_37": 3.5,
+        "Student_38": 3.5,
+        "Student_39": 4,
+        "Student_40": 4,
+        "Student_41": 4,
+        "Student_42": 4.5,
+        "Student_43": 4.5,
+        "Student_44": 4.5,
+        "Student_45": 4,
+        "Student_46": 3.5,
+        "Student_47": 3.5,
+        "Student_48": 3.5,
+        "Student_49": 4,
+        "Student_50": 2.5
+    }
+}

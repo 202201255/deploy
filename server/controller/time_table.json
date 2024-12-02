@@ -1,0 +1,39 @@
+{
+    "Monday": [
+    {"time": "8:00 - 8:50", "course": "CS101"},
+    {"time": "9:00 - 9:50", "course": "Free Slot"},
+    {"time": "10:00 - 10:50", "course": "PH301"},
+    {"time": "11:00 - 11:50", "course": "ME201"},
+    {"time": "12:00 - 12:50", "course": "Free Slot"}
+    ],
+    "Tuesday": [
+    {"time": "8:00 - 8:50", "course": "ME201"},
+    {"time": "9:00 - 9:50", "course": "CS101"},
+    {"time": "10:00 - 10:50", "course": "Free Slot"},
+    {"time": "11:00 - 11:50", "course": "PH301"},
+    {"time": "12:00 - 12:50", "course": "EE401"}
+    ],
+    "Wednesday": [
+    {"time": "8:00 - 8:50", "course": "PH301"},
+    {"time": "9:00 - 9:50", "course": "CS101"},
+    {"time": "10:00 - 10:50", "course": "Free Slot"},
+    {"time": "11:00 - 11:50", "course": "EE401"},
+    {"time": "12:00 - 12:50", "course": "Free Slot"}
+    ],
+    "Thursday": [
+    {"time": "8:00 - 8:50", "course": "Free Slot"},
+    {"time": "9:00 - 9:50", "course": "CS101"},
+    {"time": "10:00 - 10:50", "course": "ME201"},
+    {"time": "11:00 - 11:50", "course": "Free Slot"},
+    {"time": "12:00 - 12:50", "course": "PH301"}
+    ],
+    "Friday": [
+    {"time": "8:00 - 8:50", "course": "CS101"},
+    {"time": "9:00 - 9:50", "course": "EE401"},
+    {"time": "10:00 - 10:50", "course": "Free Slot"},
+    {"time": "11:00 - 11:50", "course": "ME201"},
+    {"time": "12:00 - 12:50", "course": "PH301"}
+    ]
+    
+  }
+  

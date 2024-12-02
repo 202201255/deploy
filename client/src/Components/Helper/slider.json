@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "image":"https://www.daiict.ac.in/sites/default/files/2021-04/Campus%200.jpg",
+        "title":"Area"
+    },
+    {
+        "id":2,
+        "image":"https://www.daiict.ac.in/sites/default/files/2021-04/Campus%2001%20Main%20Gate-01.jpg",
+        "title":"Area"
+    },
+    {
+        "id":3,
+        "image":"https://www.daiict.ac.in/sites/default/files/2021-04/Campus%2021.JPG",
+        "title":"Area"
+    }
+]

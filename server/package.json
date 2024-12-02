@@ -1,0 +1,51 @@
+{
+  "name": "edunexus",
+  "version": "1.0.0",
+  "description": "SE Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha './specs//*.spec.js'",
+    "start": "powershell -ExecutionPolicy Bypass -Command \"nodemon server.js\"",
+    "coverage": "nyc --reporter=text --reporter=lcov npm test"
+  },
+  "nyc":{
+    "report-dir" : "./reports",
+    "include": [
+      "controller/**/*.js",
+      "model/**/*.js",
+      "routes/**/*.js",
+      "utils/**/*.js"
+    ],
+    "exclude": [
+      "**/*.spec.js",
+      "**/tests/**",
+      "node_modules/**"
+    ]
+  },
+  "author": "Group 18",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "cryptr": "^6.3.0",
+    "dot-env": "^0.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.7",
+    "pdfkit": "^0.15.1",
+    "pg": "^8.13.0",
+    "socket.io": "^4.8.0",
+    "supertest": "^7.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-as-promised": "^8.0.1",
+    "mocha": "^10.8.2",
+    "nock": "^13.5.6",
+    "nyc": "^17.1.0",
+    "sinon": "^19.0.2"
+  }
+}

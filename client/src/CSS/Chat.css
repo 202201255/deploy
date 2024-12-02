@@ -1,0 +1,75 @@
+/* Chat.css */
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .chat-icon {
+    font-size: 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .chat-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 400px;
+    height: 550px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 40;
+  }
+  
+  .chat-header {
+    background-color: #43fff9;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .chat-content {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+  @media (max-width: 768px) {
+    .chat-window {
+      width: 90%; /* Adjust to fit smaller screens */
+      height: 50%; /* Reduce height for smaller screens */
+      bottom: 20px;
+      right: 5%;
+    }
+  }
+  
+  /* Media query for very small screens (e.g., phones) */
+  @media (max-width: 480px) {
+    .chat-window {
+      width: 100%; /* Full width */
+      height: 60%; /* Adjust height */
+      bottom: 0;
+      right: 0;
+      border-radius: 0; /* Remove rounded corners for better fit */
+    }
+  }

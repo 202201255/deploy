@@ -1,0 +1,87 @@
+#container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #1d4164;
+    color: #19425e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#container:hover {
+    transform: scale(1.02);
+}
+
+#header {
+    text-align: center;
+}
+
+#header img {
+    width: 30%;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 8px;
+}
+
+#profile {
+    margin-top: 20px;
+}
+
+#h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#field {
+    border: none;
+    margin-bottom: 20px;
+}
+
+#personal, #contact, #enrollment, #adm-info {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+#form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%; 
+    min-width: 200px;
+    margin-bottom: 15px;
+}
+
+TextField[type="fill"] {
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+#radio-button-group {
+    display: flex;
+    gap: 10px;
+}
+
+#submit-button {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* width: 100%; */
+}
+
+#submit-button:hover {
+    background-color: #45a049;
+}

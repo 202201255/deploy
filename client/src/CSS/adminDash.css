@@ -1,0 +1,169 @@
+
+.admin-dashboard {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F7FFF7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.admin-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Semester selection */
+.semester-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.semester-selection select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.semester-selection select:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1F96AE;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 0 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #1F96AE;
+}
+
+button:active:not(:disabled) {
+  background-color: #1F96AE;
+}
+
+/* Data table */
+.student-data-section {
+  margin-top: 20px;
+}
+
+.student-data-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.student-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student-data-table th,
+.student-data-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.student-data-table th {
+  background-color: #1F96AE;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.student-data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.student-data-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* List styles for allocations */
+.student-data-table ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.student-data-table li {
+  padding: 5px 0;
+}
+
+/* Approve registration button */
+.btn-approve-registration {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1F96AE;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+.btn-approve-registration:hover {
+  background-color: #1F96AE;
+}
+
+.btn-approve-registration:active {
+  background-color: #1F96AE;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .admin-dashboard {
+      padding: 15px;
+  }
+
+  button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      margin: 5px;
+  }
+
+  .student-data-table th,
+  .student-data-table td {
+      font-size: 0.8rem;
+      padding: 10px;
+  }
+}
+
