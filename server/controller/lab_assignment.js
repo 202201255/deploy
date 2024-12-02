@@ -35,27 +35,30 @@ const lab_assignment = async (req, res) => {
 
 		const Lab_ID = assignment.rows[0].lab_id;
 
-		console.log(Lab_ID, Lab_ID);
-		res.status(201).json({
+		return res.status(201).json({
 			message: "Lab assignment created successfully",
 			Lab_ID: Lab_ID,
 		});
 	} catch (error) {
-		await pool.query("ROLLBACK");
+		// await pool.query("ROLLBACK");
 		if (error.code === "23503" || error.code === "23505") {
-			console.log("first", error);
-			res.status(400).json({ error: "Error due to wrong input!!" });
+			return res.status(400).json({ error: "Error due to wrong input!!" });
 		} else {
-			console.log("second", error);
-			res.status(500).json({ error: "Internal Server Error!!" });
+			return res.status(500).json({ error: "Internal Server Error!!" });
 		}
 	}
 };
 
 const lab_submission = async (req, res) => {
+	// console.log("adfs");
+	// console.log(req.body);
+	// return res.status(201).json({
+	// 	message: "Lab submitted successfully",
+	// });
+
 	const ID = String(req.body.ID);
 	if (ID.startsWith("S")) {
-		const StudentID = ID;
+		console.log("adfs 222");
 		const submission_link = req.body.link;
 		const Lab_ID = req.params.Lab_ID;
 
@@ -64,24 +67,26 @@ const lab_submission = async (req, res) => {
 			.toLocaleString("sv-SE", { hour12: false })
 			.replace("T", " ");
 
+		console.log([parseInt(Lab_ID), submission_link, submission_time]);
 		try {
-			console.log([parseInt(Lab_ID), ID, submission_link, submission_time]);
-
 			const assignment = await pool.query(
 				`INSERT INTO Attended_Lab (Lab_ID, SID, submission, submission_time)
-            VALUES ($1, $2, $3, $4);`,
+				VALUES ($1, $2, $3, $4);`,
 				[parseInt(Lab_ID), ID, submission_link, submission_time]
 			);
+			console.log("adfs  3333");
+			// console.log(assignment);
+			// console.log([parseInt(Lab_ID), ID, submission_link, submission_time]);
 
-			res.status(201).json({
+			return res.status(201).json({
 				message: "Lab submitted successfully",
 			});
 		} catch (error) {
 			// await pool.query("ROLLBACK");
 			if (error.code === "23503" || error.code === "23505") {
-				res.status(400).json({ error: "Error due to wrong input!!" });
+				return res.status(400).json({ error: "Error due to wrong input!!" });
 			} else {
-				res.status(500).json({ error: "Internal Server Error!!" });
+				return res.status(500).json({ error: "Internal Server Error!!" });
 			}
 		}
 	}
@@ -113,30 +118,28 @@ const listlabs = async (req, res) => {
 };
 
 const listsubmissions = async (req, res) => {
-	
-		const CID = req.params.CourseId;
-		const Lab_ID = req.params.Lab_ID;
+	const CID = req.params.CourseId;
+	const Lab_ID = req.params.Lab_ID;
 
-		try {
-			const submission = await pool.query(
-				`SELECT lab_id,sid,submission,submission_time FROM attended_lab 
+	try {
+		const submission = await pool.query(
+			`SELECT lab_id,sid,submission,submission_time FROM attended_lab 
           WHERE lab_id = $1`,
-				[Lab_ID]
-			);
+			[Lab_ID]
+		);
 
-			if (submission.rows.length === 0) {
-				res.status(200).json({ message: "No submission has been done yet!" });
-			}
-
-			res.json({ Submissions: submission.rows });
-		} catch (error) {
-			console.error("Error : fetching labs from database", error);
-			res
-				.status(500)
-				.json({
-					Error: "An error occured while fetching data for submitted lab",
-				});
+		if (submission.rows.length === 0) {
+			return res
+				.status(200)
+				.json({ message: "No submission has been done yet!" });
 		}
-	
+
+		res.json({ Submissions: submission.rows });
+	} catch (error) {
+		console.error("Error : fetching labs from database", error);
+		res.status(500).json({
+			Error: "An error occured while fetching data for submitted lab",
+		});
+	}
 };
 module.exports = { lab_assignment, lab_submission, listlabs, listsubmissions };

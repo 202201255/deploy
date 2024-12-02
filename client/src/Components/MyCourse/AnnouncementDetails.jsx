@@ -10,8 +10,8 @@ import AnnouncementItem from './AnnouncementItem';
 // ];
 
 const AnnouncementDetails = ({ category, Lists }) => {
-	console.log("categaaaory");
-	console.log(Lists);
+	// console.log("categaaaory");
+	// console.log(Lists);
   return (
 		<Container maxWidth="md" sx={{ pt: 4, color: "#003366" }}>
 			{/* Page Header */}

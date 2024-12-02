@@ -110,7 +110,7 @@ const AnnouncementForm = ({ addAnnouncement, handleClose }) => {
 
 	// let cid = 1;
 	const { course_id: cid } = useParams(); // Matches the route parameter name
-	console.log("course_id", cid);
+	// console.log("course_id", cid);
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -146,7 +146,7 @@ const AnnouncementForm = ({ addAnnouncement, handleClose }) => {
 					}
 				);
 
-				console.log("results---->", results);
+				// console.log("results---->", results);
 				handleClose(); // Close the form only if submission is successful
 				toast.success("Added successful!");
 			} catch (error) {

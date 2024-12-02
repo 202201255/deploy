@@ -67,7 +67,8 @@ const LabDetails = (props) => {
 				ID: ID,
 				link: submissionLink,
 			};
-			console.log("hoahedgru", props.LabId);
+			// console.log("hoahedgru", props.LabId);
+			console.log(submissionfile);
 			const results = await axios.post(
 				`${ENDPOINT}/api/user/dashboard/mycourses/${cid}/lab/${props.LabId}/submission`,
 				submissionfile,
@@ -80,7 +81,8 @@ const LabDetails = (props) => {
 
 			toast.success("Submission successful!");
 		} catch (error) {
-			// toast.warning("Submission failed!");
+			console.log(error);
+			// toast.success("Submission failed!");
 			
 		} finally {
 			setIsAdding(false);
